@@ -5,27 +5,11 @@
 <head>
     <meta charset="UTF-8">
     <title>전화번호 관리 시스템</title>
-    <style>
-        .input-section, .output-section, .selected-section {
-            margin: 10px;
-            padding: 10px;
-            border: 1px solid #000;
-        }
-        .input-section input {
-            margin-bottom: 5px;
-        }
-        .output-section div, .selected-section div {
-            margin-bottom: 5px;
-        }
-        .selected-section div {
-            color: red;
-        }
-    </style>
+ 	<link rel="stylesheet" href="<%= request.getContextPath() %>/static/css/pb.css">
 </head>
 <body>
-    <h2>전화번호 관리 시스템</h2>
+    <h2>관리 시스템</h2>
 
-    <!-- 1) 입력 기능 -->
     <div class="input-section">
         <form action="addPhonebook" method="post">
             <label>이름: <input type="text" name="name" required></label><br>
@@ -35,7 +19,6 @@
         </form>
     </div>
 
-    <!-- 2) 전체 출력 기능 / 3) 검색 출력 기능 -->
     <div class="output-section">
         <form action="searchPhonebook" method="get">
             <label>검색: <input type="text" name="search" placeholder="이름 또는 전화번호로 검색"></label>
@@ -51,7 +34,6 @@
         </c:forEach>
     </div>
 
-    <!-- 4) 선택된 항목 출력 기능 -->
     <div class="selected-section">
         <c:if test="${selectedEntry != null}">
             <div>이름: ${selectedEntry.name}</div>

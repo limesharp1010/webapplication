@@ -1,0 +1,94 @@
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .input-section, .output-section, .selected-section {
+            margin: 20px auto;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            max-width: 500px;
+        }
+
+        .input-section input, .selected-section input {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .input-section button, .selected-section button {
+            padding: 8px 16px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .input-section button:hover, .selected-section button:hover {
+            background-color: #0056b3;
+        }
+
+        .output-section form {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .output-section input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            flex: 1;
+            margin-right: 10px;
+        }
+
+        .output-section button {
+            padding: 8px 16px;
+            border: none;
+            background-color: #28a745;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .output-section button:hover {
+            background-color: #218838;
+        }
+
+        .output-section div {
+            margin: 10px 0;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            color: #555;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .output-section div:hover {
+            background-color: #f1f1f1;
+        }
+
+        .selected-section div {
+            margin-bottom: 8px;
+            color: #d9534f;
+            font-weight: bold;
+        }
+
+        .selected-section form {
+            display: flex;
+            flex-direction: column;
+        }
